@@ -1,0 +1,86 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-37.5%" y="-66.2%" width="175%" height="232.4%" filterUnits="objectBoundingBox" id="a">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter x="-37.5%" y="-66.2%" width="175%" height="232.4%" filterUnits="objectBoundingBox" id="c">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter x="-37.5%" y="-66.2%" width="175%" height="232.4%" filterUnits="objectBoundingBox" id="e">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M17 0h26c9.389 0 17 7.611 17 17s-7.611 17-17 17H17C7.611 34 0 26.389 0 17S7.611 0 17 0z" id="b"/>
+    <path d="M17 0h26c9.389 0 17 7.611 17 17s-7.611 17-17 17H17C7.611 34 0 26.389 0 17S7.611 0 17 0z" id="d"/>
+    <path d="M17 0h26c9.389 0 17 7.611 17 17s-7.611 17-17 17H17C7.611 34 0 26.389 0 17S7.611 0 17 0z" id="f"/>
+  </defs>
+  <g fill="none" transform="rotate(180 100 100)">
+    <path d="M0 0h200v200h-200z" fill="#393359"/>
+    <path d="M0 157h74" stroke="#534A82" stroke-width="16"/>
+    <path d="M0 157h74" stroke="#E6A0E3" stroke-width="16" stroke-dasharray="300 999" class="line-5"/>
+    <path d="M74 43H-400" stroke="#534A82" stroke-width="16"/>
+    <path d="M74 43H-400" stroke="#FFC100" stroke-width="16" stroke-dasharray="300 999" class="line-4"/>
+    <path d="M0 100h400" stroke="#534A82" stroke-width="16"/>
+    <path d="M0 100h400" stroke="#00E24A" stroke-width="16" stroke-dasharray="300 999" class="line-2"/>
+    <path d="M100 200v-400z" stroke="#534A82" stroke-width="16"/>
+    <path d="M100 200v-400z" stroke="#FF5A7D" stroke-width="16" stroke-dasharray="300 999" class="line-1"/>
+    <g transform="translate(57 140)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#393359" xlink:href="#b"/>
+      <circle fill="#FF5A7D" cx="43" cy="17" r="10"/>
+      <circle fill="#E6A0E3" cx="17" cy="17" r="10"/>
+    </g>
+    <g transform="translate(83 83)">
+      <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+      <use fill="#393359" xlink:href="#d"/>
+      <circle fill="#00E24A" cx="43" cy="17" r="10"/>
+      <circle fill="#FF5A7D" cx="17" cy="17" r="10"/>
+    </g>
+    <g transform="translate(57 26)">
+      <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+      <use fill="#393359" xlink:href="#f"/>
+      <circle fill="#FF5A7D" cx="43" cy="17" r="10"/>
+      <circle fill="#FFC100" cx="17" cy="17" r="10"/>
+    </g>
+  </g>
+  <style>
+  .line-1 { animation: 2s linear infinite line-1 }
+  @keyframes line-1 {
+    0% { stroke-dashoffset: 300 }
+    12.5% { stroke-dashoffset: 300 }
+    50% { stroke-dashoffset: 0 }
+    75% { stroke-dashoffset: -200 }
+    75.001% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 300 }
+  }
+  .line-2 { animation: 1.5s linear infinite line-2 }
+  @keyframes line-2 {
+    0% { stroke-dashoffset: 0 }
+    25% { stroke-dashoffset: -200 }
+    62.5% { stroke-dashoffset: -200 }
+    62.501% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 0 }
+  }
+  .line-4 { animation: 1.78s linear infinite line-4 }
+  @keyframes line-4 {
+    0% { stroke-dashoffset: 300 }
+    37.4% { stroke-dashoffset: -74 }
+    99.999% { stroke-dashoffset: -74 }
+    100% { stroke-dashoffset: 300 }
+  }
+  .line-5 { animation: 1.667s linear infinite line-5 }
+  @keyframes line-5 {
+    0% { stroke-dashoffset: 300 }
+    4.75% { stroke-dashoffset: 300 }
+    42.25% { stroke-dashoffset: 0 }
+    67.25% { stroke-dashoffset: -200 }
+    99.999% { stroke-dashoffset: -200 }
+    100% { stroke-dashoffset: 300 }
+  }
+  </style>
+</svg>

@@ -1,0 +1,86 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-66.2%" y="-66.2%" width="232.4%" height="232.4%" filterUnits="objectBoundingBox" id="a">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter x="-66.2%" y="-66.2%" width="232.4%" height="232.4%" filterUnits="objectBoundingBox" id="c">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter x="-66.2%" y="-66.2%" width="232.4%" height="232.4%" filterUnits="objectBoundingBox" id="e">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M17 0c9.389 0 17 7.611 17 17s-7.611 17-17 17S0 26.389 0 17 7.611 0 17 0z" id="b"/>
+    <path d="M17 0c9.389 0 17 7.611 17 17s-7.611 17-17 17S0 26.389 0 17 7.611 0 17 0z" id="d"/>
+    <path d="M17 0c9.389 0 17 7.611 17 17s-7.611 17-17 17S0 26.389 0 17 7.611 0 17 0z" id="f"/>
+  </defs>
+  <g fill="none">
+    <path d="M0 0h200v200h-200z" fill="#393359"/>
+    <path d="M0 157h400" stroke="#534A82" stroke-width="16"/>
+    <path d="M0 157h400" stroke="#E6A0E3" stroke-width="16" stroke-dasharray="300 999" class="line-5"/>
+    <path d="M200 43H80c-22.091 0-40 17.909-40 40v300" stroke="#534A82" stroke-width="16"/>
+    <path d="M200 43H80c-22.091 0-40 17.909-40 40v300" stroke="#FFC100" stroke-width="16" stroke-dasharray="300 999" class="line-4"/>
+    <path d="M113 0V8.217A39.19 39.19 0 00131.5 41.5 39.19 39.19 0 01150 74.783V83h0v300" stroke="#534A82" stroke-width="16"/>
+    <path d="M113 0V8.217A39.19 39.19 0 00131.5 41.5 39.19 39.19 0 01150 74.783V83h0v300" stroke="#1293EC" stroke-width="16" stroke-dasharray="300 999" class="line-3"/>
+    <path d="M0 100h400" stroke="#534A82" stroke-width="16"/>
+    <path d="M0 100h400" stroke="#00E24A" stroke-width="16" stroke-dasharray="300 999" class="line-2"/>
+    <g transform="translate(133 83)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#393359" xlink:href="#b"/>
+    </g>
+    <path d="M150 90c5.523 0 10 4.477 10 10s-4.477 10-10 10z" fill="#1293EC"/>
+    <path d="M150 90v20c-5.523 0-10-4.477-10-10s4.477-10 10-10z" fill="#00E24A"/>
+    <g>
+      <g transform="translate(23 83)">
+        <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+        <use fill="#393359" xlink:href="#d"/>
+      </g>
+      <path d="M40 90c5.523 0 10 4.477 10 10s-4.477 10-10 10z" fill="#FFC100"/>
+      <path d="M40 90v20c-5.523 0-10-4.477-10-10s4.477-10 10-10z" fill="#00E24A"/>
+    </g>
+    <g>
+      <g transform="translate(133 140)">
+        <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+        <use fill="#393359" xlink:href="#f"/>
+      </g>
+      <path d="M150 147c5.523 0 10 4.477 10 10s-4.477 10-10 10z" fill="#E6A0E3"/>
+      <path d="M150 147v20c-5.523 0-10-4.477-10-10s4.477-10 10-10z" fill="#1293EC"/>
+    </g>
+  </g>
+  <style>
+  .line-2 { animation: 1.5s linear infinite line-2 }
+  @keyframes line-2 {
+    0% { stroke-dashoffset: 300 }
+    37.5% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: -200 }
+  }
+  /* line 3: 215+200+(211)+200 = 826 units long */
+  .line-3 { animation: 2.13s linear infinite line-3 }
+  @keyframes line-3 {
+    0% { stroke-dashoffset: 300 }
+    13.92% { stroke-dashoffset: 300 }
+    75.78% { stroke-dashoffset: -211 }
+    100% { stroke-dashoffset: -211 }
+  }
+  .line-4 { animation: 1.78s linear infinite line-4 }
+  @keyframes line-4 {
+    0% { stroke-dashoffset: 300 }
+    7.4% { stroke-dashoffset: 300 }
+    67.4% { stroke-dashoffset: -300 }
+    100% { stroke-dashoffset: -300 }
+  }
+  .line-5 { animation: 1.667s linear infinite line-5 }
+  @keyframes line-5 {
+    0% { stroke-dashoffset: 138 }
+    42.25% { stroke-dashoffset: -200 }
+    79.75% { stroke-dashoffset: -200 }
+    79.751% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 138 }
+  }
+  </style>
+</svg>

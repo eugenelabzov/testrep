@@ -1,0 +1,63 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-66.2%" y="-37.5%" width="232.4%" height="175%" filterUnits="objectBoundingBox" id="a">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter x="-66.2%" y="-37.5%" width="232.4%" height="175%" filterUnits="objectBoundingBox" id="c">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M17 0c9.389 0 17 7.611 17 17v26c0 9.389-7.611 17-17 17S0 52.389 0 43V17C0 7.611 7.611 0 17 0z" id="b"/>
+    <path d="M17 0c9.389 0 17 7.611 17 17v26c0 9.389-7.611 17-17 17S0 52.389 0 43V17C0 7.611 7.611 0 17 0z" id="d"/>
+  </defs>
+  <g fill="none">
+    <path fill="#F2F5FA" d="M0 0h200v200h-200z"/>
+    <path d="M160 200v-74" stroke="#DEE6F2" stroke-width="16"/>
+    <path d="M160 200v-74" stroke="#FFB965" stroke-width="16" stroke-dasharray="300 999" class="line-4"/>
+    <path d="M50 200V57a31.2 31.2 0 0118.174-28.35l.652-.3A31.2 31.2 0 0087 0" stroke="#DEE6F2" stroke-width="16"/>
+    <path d="M50 200V57a31.2 31.2 0 0118.174-28.35l.652-.3A31.2 31.2 0 0087 0" stroke="#66C8FF" stroke-width="16" stroke-dasharray="300 9999" class="line-3"/>
+    <path d="M0 100h400" stroke="#DEE6F2" stroke-width="16"/>
+    <path d="M0 100h400" stroke="#16D140" stroke-width="16" stroke-dasharray="300 999" class="line-2"/>
+    <g transform="translate(143 83)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#FFF" xlink:href="#b"/>
+      <circle fill="#FFB965" cx="17" cy="43" r="10"/>
+      <circle fill="#16D140" cx="17" cy="17" r="10"/>
+    </g>
+    <g transform="translate(33 57)">
+      <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+      <use fill="#FFF" xlink:href="#d"/>
+      <circle fill="#16D140" cx="17" cy="43" r="10"/>
+      <circle fill="#66C8FF" cx="17" cy="17" r="10"/>
+    </g>
+  </g>
+  <style>
+  .line-2 { animation: 1.5s linear infinite line-2 }
+  @keyframes line-2 {
+    0% { stroke-dashoffset: 200 }
+    50% { stroke-dashoffset: -200 }
+    87.5% { stroke-dashoffset: -200 }
+    87.501% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 200 }
+  }
+  /* line 3: (215)+200+211+200 = 826 units long */
+  .line-3 { animation: 2.13s linear infinite line-3 }
+  @keyframes line-3 {
+    0% { stroke-dashoffset: 0 }
+    26.03% { stroke-dashoffset: -215 }
+    63.68% { stroke-dashoffset: -215 }
+    63.681% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 0 }
+  }
+  .line-4 { animation: 1.78s linear infinite line-4 }
+  @keyframes line-4 {
+    0% { stroke-dashoffset: 300 }
+    57.4% { stroke-dashoffset: 300 }
+    94.8% { stroke-dashoffset: -74 }
+    100% { stroke-dashoffset: -74 }
+  }
+  </style>
+</svg>

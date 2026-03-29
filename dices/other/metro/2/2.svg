@@ -1,0 +1,40 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-66.2%" y="-37.5%" width="232.4%" height="175%" filterUnits="objectBoundingBox" id="a">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M17 0c9.389 0 17 7.611 17 17v26c0 9.389-7.611 17-17 17S0 52.389 0 43V17C0 7.611 7.611 0 17 0z" id="b"/>
+  </defs>
+  <g fill="none">
+    <path fill="#F2F5FA" d="M0 0h200v200h-200z"/>
+    <path d="M0 87h400" stroke="#DEE6F2" stroke-width="16"/>
+    <path d="M0 87h400" stroke="#66C8FF" stroke-width="16" stroke-dasharray="300 999" class="line-3"/>
+    <path d="M100 0v400z" stroke="#DEE6F2" stroke-width="16"/>
+    <path d="M100 0v400z" stroke="#F48685" stroke-width="16" stroke-dasharray="300 999" class="line-1"/>
+    <g transform="translate(83 70)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#FFF" xlink:href="#b"/>
+      <circle fill="#F48685" cx="17" cy="43" r="10"/>
+      <circle fill="#66C8FF" cx="17" cy="17" r="10"/>
+    </g>
+  </g>
+  <style>
+  .line-1 { animation: 2s linear infinite line-1 }
+  @keyframes line-1 {
+    0% { stroke-dashoffset: 300 }
+    37.5% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: -200 }
+  }
+  /* line 3: 215+(200)+211+200 = 826 units long */
+  .line-3 { animation: 2.13s linear infinite line-3 }
+  @keyframes line-3 {
+    0% { stroke-dashoffset: 215 }
+    50.24% { stroke-dashoffset: -200 }
+    89.71% { stroke-dashoffset: -200 }
+    89.711% { stroke-dashoffset: 300 }
+    100% { stroke-dashoffset: 215 }
+  }
+  </style>
+</svg>
